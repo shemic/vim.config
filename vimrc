@@ -3,6 +3,14 @@
 " 
 "=============================
 
+let mapleader = ','
+let g:mapleader = ','
+
+" install Vundle bundles
+if filereadable(expand("~/.vimrc.bundles"))
+  source ~/.vimrc.bundles
+endif
+
 " fonts字体设置
 set guifont=Monaco:h20
 
@@ -69,12 +77,6 @@ hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white
 hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white
 
 
-"==========================================
-"hot key  自定义快捷键
-"==========================================
-let mapleader = ','
-let g:mapleader = ','
-
 ""为方便复制，用<F5>开启/关闭行号显示:
 function! HideNumber()
   if(&relativenumber == &number)
@@ -96,8 +98,8 @@ nnoremap <F5> :call HideNumber()<CR>
 "更新当前目录的代码
 noremap <F2>    :!svn up <cr>
 "提交SVN(当前目录)
-map <F3>    :!svn ci -m "yubin commit" <cr>
+map <F3>    :!svn ci -m "josey commit" <cr>
 "提交SVN(当前文件)
-map <F4>    :!svn ci -m "yubin commit" %<cr>
+map <F4>    :!svn ci -m "josey commit" %<cr>
 
 map <leader>g <S-g>
