@@ -24,7 +24,7 @@ set t_ti= t_te=
 syntax enable
 syntax on
 set background=dark 
-colorscheme solarized
+colorscheme molokai
 set t_Co=256
 "color test
 ""在状态栏显示正在输入的命令
@@ -71,9 +71,9 @@ set formatoptions+=B
 " 开启鼠标。。。好吧，无法成为完美的键盘党
 "set mouse=a
 " 设置搜索高亮 
-set hls
+"set hls
 " 设置当前行高亮
-set cursorline
+"set cursorline
 hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white
 hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white
 
