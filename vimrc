@@ -20,10 +20,11 @@ set history=2000
 " 保留屏幕
 set t_ti= t_te=
 
-" 设置语法高亮和主题
+" 设置语法高亮和主题 light
 syntax enable
 syntax on
-set background=dark
+set background=dark 
+colorscheme solarized
 set t_Co=256
 "color test
 ""在状态栏显示正在输入的命令
@@ -68,7 +69,7 @@ set formatoptions+=m
 " 合并两行中文时，不在中间加空格：
 set formatoptions+=B
 " 开启鼠标。。。好吧，无法成为完美的键盘党
-set mouse=a
+"set mouse=a
 " 设置搜索高亮 
 set hls
 " 设置当前行高亮
@@ -98,8 +99,8 @@ nnoremap <F5> :call HideNumber()<CR>
 "更新当前目录的代码
 noremap <F2>    :!svn up <cr>
 "提交SVN(当前目录)
-map <F3>    :!svn ci -m "josey commit" <cr>
+map <F3>    :!svn ci -m "robin commit" <cr>
 "提交SVN(当前文件)
-map <F4>    :!svn ci -m "josey commit" %<cr>
+map <F4>    :!svn ci -m "robin commit" %<cr>
 
 map <leader>g <S-g>
