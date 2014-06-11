@@ -1,5 +1,7 @@
 安装：
 <pre>
+sudo apt-get install ctags
+
 git clone https://github.com/paladinly/vim.config.git vim
 
 cd vim
