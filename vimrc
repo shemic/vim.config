@@ -73,7 +73,7 @@ set formatoptions+=B
 " 设置搜索高亮 
 "set hls
 " 设置当前行高亮
-"set cursorline
+set cursorline
 hi CursorLine   cterm=NONE ctermbg=darkred ctermfg=white
 hi CursorColumn cterm=NONE ctermbg=darkred ctermfg=white
 
