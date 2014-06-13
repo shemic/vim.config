@@ -76,12 +76,15 @@ set laststatus=2
 "更高效的移动 ,, + w/fx
 Bundle 'Lokaltog/vim-easymotion'
 
-"快速插入代码片段
+" 代码片段快速插入
 Bundle 'SirVer/ultisnips'
+" 代码片段资源,需要学习
+" Snippets are separated from the engine. Add this if you want them:
+Bundle 'honza/vim-snippets'
 let g:UltiSnipsExpandTrigger = "<tab>"
 let g:UltiSnipsJumpForwardTrigger = "<tab>"
-"定义存放代码片段的文件夹 .vim/snippets下，使用自定义和默认的，将会的到全局，有冲突的会提示
-let g:UltiSnipsSnippetDirectories=["snippets", "bundle/ultisnips/UltiSnips"]
+" 定义存放代码片段的文件夹 .vim/additional_snippets下，使用自定义和默认的，将会的到全局，有冲突的会提示
+let g:UltiSnipsSnippetDirectories=["additional_snippets", 'UltiSnips']
 
 "快速 加减注释
 Bundle 'scrooloose/nerdcommenter'
